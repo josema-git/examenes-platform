@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'examenes',
 ]
 
 MIDDLEWARE = [
@@ -75,14 +76,16 @@ WSGI_APPLICATION = 'examenes_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-'default': {
+DATABASES = {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'examenes_db',
-        'USER': 'tu_usuario',
-        'PASSWORD': 'tu_contraseña',
+        'USER': 'admin',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
+}
 
 
 # Password validation

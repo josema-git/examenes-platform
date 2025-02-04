@@ -1,0 +1,13 @@
+# Django
+venv/
+__pycache__/
+*.pyc
+*.sqlite3
+
+# Angular
+node_modules/
+dist/
+
+# Otros
+.env
+*.log
